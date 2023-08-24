@@ -1,5 +1,6 @@
 import React from "react";
 import clsx from "clsx";
+import Link from "next/link";
 
 import SocialIcons from "@/components/SocialIcons";
 
@@ -26,7 +27,7 @@ export default function Footer() {
             className={clsx("text-secondary text-2xl font-semibold")}
             id="companyName"
           >
-            <a href="/">Saguna Sigma Teknologi</a>
+            <h1>Saguna Sigma Teknologi</h1>
           </h1>
           <div className={clsx("")}>
             <SocialIcons type="secondary" direct="horizontal" />
