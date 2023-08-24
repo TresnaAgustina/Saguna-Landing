@@ -5,6 +5,7 @@ import SocialIcons from "../SocialIcons";
 import Button from "../Button";
 import NavToggle from "../Icons/NavToggle";
 import Logo from "../Icons/Logo";
+import Link from "next/link";
 
 import { dataNavItems } from "@/data/local-data";
 
@@ -44,9 +45,9 @@ export default function Navbar() {
       >
         {/* logo */}
         <div className={clsx("logo")}>
-          <a href="/">
+          <Link href="/">
             <Logo />
-          </a>
+          </Link>
         </div>
 
         <div
@@ -117,9 +118,9 @@ export default function Navbar() {
           >
             {/* logo */}
             <div className={clsx("logo md:hidden")}>
-              <a href="/" className={clsx("")}>
+              <Link href="/" className={clsx("")}>
                 <Logo />
-              </a>
+              </Link>
             </div>
             {/* nav link */}
             <div className="">
@@ -137,7 +138,7 @@ export default function Navbar() {
                       "font-medium  text-lg hover:text-primary hover:underline hover:underline-offset-4 hover:duration-150"
                     )}
                   >
-                    <a href={item.link}>{item.name}</a>
+                    <Link href={item.link}>{item.name}</Link>
                   </motion.li>
                 ))}
               </ul>

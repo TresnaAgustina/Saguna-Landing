@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { projectItems } from "@/data/local-data";
 import Card from "@/components/Card";
 import Navbar from "@/components/layouts/Navbar";
+import Link from "next/link";
 
 export default function PortfolioDetail() {
   const router = useRouter();
@@ -65,10 +66,10 @@ export default function PortfolioDetail() {
               </div>
 
               <div className="text-text text-md font-medium hover:underline hover:underline-offset-3 hover:text-primary mt-6 lg:mt-0">
-                <a href={selectedProject.projectUrl} target="blank">
+                <Link href={selectedProject.projectUrl} target="blank">
                   Lihat Projek
                   <i className="fa-solid fa-up-right-from-square ml-2 text-primary"></i>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

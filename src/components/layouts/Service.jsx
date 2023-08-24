@@ -1,5 +1,6 @@
 import React from "react";
 import clsx from "clsx";
+import Link from "next/link";
 
 import { serviceItems } from "@/data/local-data";
 
@@ -87,7 +88,7 @@ export default function Service() {
                   key={index}
                   id="singleItem2"
                 >
-                  <a href="" className="link">
+                  <Link href="" className="link">
                     <div
                       className={clsx(
                         "text-xl md:text-3xl text-secondary mb-2"
@@ -110,7 +111,7 @@ export default function Service() {
                     >
                       {desc}
                     </p>
-                  </a>
+                  </Link>
                 </div>
               ))}
             </div>
