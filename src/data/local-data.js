@@ -1,0 +1,321 @@
+import { nanoid } from "nanoid";
+
+// ==========*======== Icon Data ==========*==========
+export const dataIcon = [
+  {
+    id: nanoid(),
+    icon: "fa-brands fa-instagram",
+    color: "hover:bg-[#FF317B]",
+    border: "hover:border-[#FF317B]",
+    link: "https://www.instagram.com/",
+  },
+  {
+    id: nanoid(),
+    icon: "fa-brands fa-linkedin-in",
+    color: "hover:bg-[#0066C8]",
+    border: "hover:border-[#0066C8]",
+    link: "https://www.linkedin.com/",
+  },
+  {
+    id: nanoid(),
+    icon: "fa-brands fa-whatsapp",
+    color: "hover:bg-[#00C307]",
+    border: "hover:border-[#00C307]",
+    link: "https://api.whatsapp.com/send?phone=082144785332",
+  },
+  {
+    id: nanoid(),
+    icon: "fa-regular fa-paper-plane",
+    color: "hover:bg-[#16A0E8]",
+    border: "hover:border-[#16A0E8]",
+    link: "https://www.instagram.com/username/",
+  },
+  {
+    id: nanoid(),
+    icon: "fa-regular fa-envelope",
+    color: "hover:bg-[#DD5046]",
+    border: "hover:border-[#DD5046]",
+    link: "mailto:tresnaa001@gmail.com",
+  },
+];
+
+// ==========*========== NavLink ==========*==========
+export const dataNavItems = [
+  {
+    name: "Beranda",
+    link: "/",
+  },
+  {
+    name: "Tentang",
+    link: "/about",
+  },
+  {
+    name: "Portfolio",
+    link: "/portfolio",
+  },
+  {
+    name: "Galeri",
+    link: "/gallery",
+  },
+];
+
+// ==========*========== Project Data ==========*==========
+export const projectItems = [
+  {
+    id: nanoid(),
+    title: "Manajemen Booking and Payment Tropical Temptation Beach Club",
+    desc: "Kami mengembangan all of component dari manajemen booking TT Beach Club, baik dari reservasi online, pembayaran, manajement event, manajement guest sampai manajemen income untuk TT Bech Club.",
+    category: "Web Development",
+    client: "Tropical Temptation Beach Club",
+    projectImg: "/assets/img/img1.png",
+    cardImg: "/assets/img/ProjectCard(1).png",
+    route: "/portfolio/project01",
+    projectUrl: "https://ttbeach.club/",
+    tags: "web-dev",
+    year: 2023,
+  },
+  {
+    id: nanoid(),
+    title: "Astra Honda Bali Manajemen Data Customer & Semeton Card",
+    desc: "Intergrasi antara database live astra daerah Bali dengan custom card printer untuk pembuatan kartu semeton honda yang mencakup fitur e-money didalamnya. Selain itu sistem ini juga membantu Astra Honda Bali untuk mengatur manajement customer dengan keperluan sistem CRM",
+    category: "Desktop App",
+    client: "Astra Honda Bali",
+    projectImg: "/assets/img/img2.png",
+    cardImg: "/assets/img/ProjectCard(2).png",
+    route: "/portfolio/project02",
+    projectUrl: "",
+    tags: "desktop-app",
+    year: 2023,
+  },
+  {
+    id: nanoid(),
+    title: "Aplikasi Marikos Cari Tempat Kos dan Jasa",
+    desc: "Aplikasi Marikos merupakan aplikasi berbasis android yang berguna untuk membantu masyarakat dalam mencari tempat kos terdekat, tak hanya itu, pada aplikasi Marikos ini tersedia fitur untuk mencari penyedia layanan jasa",
+    category: "Mobile App",
+    client: "Marikos",
+    projectImg: "/assets/img/img3.png",
+    cardImg: "/assets/img/ProjectCard(3).png",
+    route: "/portfolio/project03",
+    projectUrl: "",
+    tags: "mobile-app",
+    year: 2023,
+  },
+  {
+    id: nanoid(),
+    title: "Mobile RFID Berbasis Android",
+    desc: "mRFID (mobile radio frequency identification) merupakan aplikasi ditujukan untuk memudahkan perawat melakukan pemantauan kesehatan dan keselamatan pasien kanker terhadap gejala efek samping kemoterapi. Aplikasi yang berbasis android ini dapat dihubungkan dengan piranti khusus berupa gelang RFID (Radio Frequency Identification) yang digunakan oleh pasien untuk memaksimalkan fungsi pemantauan kesehatan",
+    category: "Mobile App",
+    client: "RSAD Udayana",
+    projectImg: "/assets/img/img4.png",
+    cardImg: "/assets/img/ProjectCard(4).png",
+    route: "/portfolio/project04",
+    projectUrl: "",
+    tags: "mobile-app",
+    year: 2023,
+  },
+  {
+    id: nanoid(),
+    title: "Counter Antrian Low Cost RSAD Udayana",
+    desc: "Counter antrian (Queue Management system) untuk program CSR Bank Mandiri diperuntukan untuk management pasien RSAD Udayana",
+    category: "IoT",
+    client: "RSAD Udayana",
+    projectImg: "/assets/img/img5.png",
+    cardImg: "/assets/img/ProjectCard(5).png",
+    route: "/portfolio/project05",
+    projectUrl: "",
+    tags: "iot",
+    year: 2023,
+  },
+  {
+    id: nanoid(),
+    title: "WEBSITE NATURAL BALI KULKUL",
+    desc: "Kulkul Natural Bali Kulkul adalah salah satu perusahaan pembuat Sea Salt yang telah mendistribusikan produknya ke Eropa dan Amerika. Kami mengembangkan custom wordpress theme dan e-commerce intergration ke websitenya",
+    category: "Web Development",
+    client: "Natural Bali Kulkul",
+    projectImg: "/assets/img/img6.png",
+    cardImg: "/assets/img/ProjectCard(6).png",
+    route: "/portfolio/project06",
+    projectUrl: "https://naturalbalikulkul.com/",
+    tags: "web-dev",
+    year: 2023,
+  },
+  {
+    id: nanoid(),
+    title: "OMNI HOTELIER (Sebagai Tenant Pendampingan)",
+    desc: "Omni Hotelier merupakan penyedia online booking system untuk hospitality dan pada tahun 2020 menjadi tenant Inkubator Bisnis STMIK STIKOM Indonesia. Pada tahap ini leader berperan dalam pendampingan pengembangan feature Omni Hotelier saat diinkubasi BRIN.",
+    category: "Web Development",
+    client: "Omni Hotelier",
+    projectImg: "/assets/img/img7.png",
+    cardImg: "/assets/img/ProjectCard(7).png",
+    route: "/portfolio/project07",
+    projectUrl: "",
+    tags: "web-dev",
+    year: 2023,
+  },
+  {
+    id: nanoid(),
+    title: "SIASIK Mobile APP",
+    desc: "SIASIK merupakan sistem informasi berbasis mobile yang dapat digunakan oleh paramedis, lansia dan anggota keluarga lansia untuk melakukan edukasi terhadap gejala hipertensi. Aplikasi ini menyediakan informasi grafis dan kuesioner untuk melakukan pendataan dan pencegahan dini terhadap hipertensi",
+    category: "Mobile App",
+    client: "RSAD Udayana",
+    projectImg: "/assets/img/img8.png",
+    cardImg: "/assets/img/ProjectCard(8).png",
+    route: "/portfolio/project08",
+    projectUrl: "",
+    tags: "mobile-app",
+    year: 2023,
+  },
+  {
+    id: nanoid(),
+    title: "EEG PROTOCOL & FRAMEWORK in Python",
+    desc: "Kami mengembangkan interface dari device chipset EEG sendor buatan Neurosky untuk membuat EEG accessible, yang dilatih menggunakan model Artificial Intelligence (AI) dengan dataset Mindwave (dataset gelombang otak) dibiayai oleh direktorat riset kemendikbud.",
+    category: "Desktop App",
+    client: "Kemendikbud",
+    projectImg: "/assets/img/img9.png",
+    cardImg: "/assets/img/ProjectCard(9).png",
+    route: "/portfolio/project09",
+    projectUrl: "",
+    tags: "desktop-app",
+    year: 2023,
+  },
+  {
+    id: nanoid(),
+    title: "Simonev INBIS STIKI Indonesia",
+    desc: "Tenant management system untuk business incubation programme di lingkungan Inkubator Bisnis STIKI Indonesia",
+    category: "Web Development",
+    client: "STIKI Indonesia",
+    projectImg: "/assets/img/img10.png",
+    cardImg: "/assets/img/ProjectCard(10).png",
+    route: "/portfolio/project10",
+    projectUrl: "",
+    tags: "web-dev",
+    year: 2023,
+  },
+  {
+    id: nanoid(),
+    title:
+      "Sistem Translasi Automatis Latin to Balinese Script untuk Universitas Udayana",
+    desc: "Aplikasi transliterasi yang digunakan untuk menterjemahkan bahasa Bali atau Kawi yang ada pada lontar, dan menulisnya kembali dalam format daun lontar pada Microsoft word.",
+    category: "Dekstop App",
+    client: "Universitas Udayana",
+    projectImg: "/assets/img/img11.png",
+    cardImg: "/assets/img/ProjectCard(11).png",
+    route: "/portfolio/project11",
+    projectUrl: "",
+    tags: "desktop-app",
+    year: 2023,
+  },
+  {
+    id: nanoid(),
+    title: "Sistem Food Detection System dengan Calorie Counter Berbasis AI",
+    desc: "Aplikasi cerdas yang dapat digunakan untuk memprediksi besaran kalori makanan yang akan dimakan hanya menggunakan foto makanan tersebut. Makanan dikembangkan untuk penderita diabetes dalam mengatur besaran kalori harian yang harus dikonsumsi penderita",
+    category: "Web Development",
+    client: "STIKI Indonesia",
+    projectImg: "/assets/img/img12.png",
+    cardImg: "/assets/img/ProjectCard(12).png",
+    route: "/portfolio/project12",
+    projectUrl: "",
+    tags: "web-dev",
+    year: 2023,
+  },
+  {
+    id: nanoid(),
+    title: "Automatic Balinese Mask detectionAutomatic Balinese Mask detection",
+    desc: "Aplikasi cerdas yang dapat mengenali nama topeng Bali. Aplikasi ini diperuntukkan kepada para wisatawan untuk memberikan informasi terkait topeng yang ditemui di jalan atau tempat wisata ketika berwisata di Bali. Menggunakan custom convolutional neural network.",
+    category: "Mobile App",
+    client: "STIKI Indonesia",
+    projectImg: "/assets/img/img13.png",
+    cardImg: "/assets/img/ProjectCard(13).png",
+    route: "/portfolio/project13",
+    projectUrl: "",
+    tags: "mobile-app",
+    year: 2023,
+  },
+];
+
+// ==========*========== [ Brand Logo ] ==========*========== //]
+export const brandLogo = [
+  {
+    id: nanoid(),
+    alt: "Logo STIKI Indonesia",
+    img: "/assets/img/brand1.png",
+  },
+  {
+    id: nanoid(),
+    alt: "Logo TT Beach CLub",
+    img: "/assets/img/brand2.png",
+  },
+  {
+    id: nanoid(),
+    alt: "Logo Honda",
+    img: "/assets/img/brand3.png",
+  },
+  {
+    id: nanoid(),
+    alt: "Logo Bali KulKul",
+    img: "/assets/img/brand4.png",
+  },
+  {
+    id: nanoid(),
+    alt: "Logo Kemendikbud",
+    img: "/assets/img/brand5.png",
+  },
+  {
+    id: nanoid(),
+    alt: "Logo Inkubator Bisnis STIKI Indonesia",
+    img: "/assets/img/brand6.png",
+  },
+];
+
+// ==========*========== [ Reason ] ==========*========== //]
+export const ReasonItem = [
+  {
+    title: "Proses Kerja Prioritas",
+    desc: "Proses Kerja Prioritas kami: efisien, berkualitas, dan menghasilkan hasil terbaik bagi Anda.",
+    icon: "fa-solid fa-circle-check",
+  },
+  {
+    title: "Team Berdedikasi",
+    desc: "Tim kami penuh dedikasi, berkomitmen memberikan yang terbaik untuk kesuksesan proyek Anda.",
+    icon: "fa-solid fa-user-group",
+  },
+  {
+    title: "Dukungan 24/7 Jam",
+    desc: "Kami siap memberikan dukungan penuh 24/7 untuk menjaga keberlanjutan dan kepercayaan Anda.",
+    icon: "fa-solid fa-phone",
+  },
+];
+
+// ==========*========== [ Service Items ] ==========*========== //]
+export const serviceItems = [
+  {
+    title: "Web Development",
+    desc: "Kami mengembangkan aplikasi berbasis web yang sesuai dengan kebutuhan pelanggan.",
+    icon: "fa-solid fa-code",
+  },
+  {
+    title: "Mobile App",
+    desc: "Kami mengembangkan aplikasi berbasis mobile yang mampu berjalan pada sistem Android dan IOS",
+    icon: "fa-solid fa-mobile",
+  },
+  {
+    title: "Desktop App Development",
+    desc: "Kami mengembangkan aplikasi yang mampu berjalan pada aplikasi desktop berbasis Windows dan MacOS",
+    icon: "fa-solid fa-desktop",
+  },
+  {
+    title: "Artificial Intelligence Development",
+    desc: "Kami menerapkan teknologi mutahir untuk membuat aplikasi yang kami kerjakan dapat bekerja cerdas",
+    icon: "fa-solid fa-brain",
+  },
+  {
+    title: "IOT Development",
+    desc: "Kami mengintegrasikan hardware dengan sistem baik berbasis web, desktop dan mobile",
+    icon: "fa-solid fa-server",
+  },
+  {
+    title: "Network Infrastructure Development",
+    desc: "Kami merancang dan mengimplementasikan perangkat jaringan pada Villa yang ada di Bali",
+    icon: "fa-solid fa-network-wired",
+  },
+];
