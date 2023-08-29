@@ -46,7 +46,9 @@ export default function Project() {
         </div>
 
         <div
-          class={clsx("grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4")}
+          className={clsx(
+            "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
+          )}
           id="projectContainer"
         >
           {/* <!-- <Card client:load /> --> */}
