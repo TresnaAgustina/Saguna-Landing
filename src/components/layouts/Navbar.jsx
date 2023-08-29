@@ -7,6 +7,9 @@ import NavToggle from "../Icons/NavToggle";
 import Logo from "../Icons/Logo";
 import Link from "next/link";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
+
 import { dataNavItems } from "@/data/local-data";
 
 export default function Navbar() {
@@ -57,7 +60,7 @@ export default function Navbar() {
             "flex justify-center items-center",
             "md:relative md:w-auto md:h-auto",
             "transition-all duration-300 ease-in-out",
-            isNavOpen ? "top-1" : "" // Menggunakan state isNavOpen untuk mengatur tampilan overlay
+            isNavOpen ? "top-2" : "" // Menggunakan state isNavOpen untuk mengatur tampilan overlay
           )}
           id="navItems"
         >
@@ -160,7 +163,7 @@ export default function Navbar() {
               id="close"
               onClick={() => setIsNavOpen(false)}
             >
-              <i className="fa-solid fa-xmark" />
+              <FontAwesomeIcon icon={faXmark} />
             </div>
           </div>
         </div>

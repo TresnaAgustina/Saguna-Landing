@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import clsx from "clsx";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const NavToggle = ({ onClick }) => {
   return (
@@ -16,7 +18,7 @@ const NavToggle = ({ onClick }) => {
         )}
         id="content"
       >
-        <i className={clsx("fa-solid fa-bars")} />
+        <FontAwesomeIcon icon={faBars} />
       </div>
     </motion.button>
   );
