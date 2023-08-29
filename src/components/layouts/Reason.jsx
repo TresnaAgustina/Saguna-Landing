@@ -3,6 +3,7 @@ import clsx from "clsx";
 
 import ReasonHeader from "../ReasonHeader";
 import ReasonItems from "../ReasonItems";
+import Image from "next/image";
 
 export default function Reason() {
   return (
@@ -24,7 +25,13 @@ export default function Reason() {
           )}
           id="imgContainer"
         >
-          <img src="/assets/img/Service.png" alt="" />
+          <Image
+            src="/assets/img/Service.png"
+            alt="Reason Image"
+            unoptimized
+            width={500}
+            height={500}
+          />
         </div>
 
         <div

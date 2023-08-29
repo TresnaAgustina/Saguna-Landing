@@ -4,6 +4,7 @@ import { projectItems } from "@/data/local-data";
 import Card from "@/components/Card";
 import Navbar from "@/components/layouts/Navbar";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function PortfolioDetail() {
   const router = useRouter();
@@ -77,16 +78,19 @@ export default function PortfolioDetail() {
 
         <div className="mt-6">
           <div className="relative w-full h-auto md:h-[26rem] flex items-center overflow-hidden rounded-md group-hover:cursor-pointer imgContainer">
-            <img
-              className="relative z-30 m-auto w-auto h-full py-4 hover:scale-[1.3] duration-200 projectImg"
+            <Image
+              className="relative z-30 m-auto w-auto h-full py-4 hover:scale-[1.3] duration-200 projectImage"
               src={selectedProject.projectImg}
               alt=""
+              width={500}
+              height={500}
             />
-            <img
+            <Image
               src="/assets/img/ImgContainerBg.svg"
               className="absolute w-full object-cover z-0"
               alt=""
               srcSet=""
+              layout="fill"
             />
           </div>
           <p className="text-lg text-p font-regular mt-2">

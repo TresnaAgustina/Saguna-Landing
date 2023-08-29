@@ -1,6 +1,7 @@
 import react from "react";
 import { motion } from "framer-motion";
 import clsx from "clsx";
+import Image from "next/image";
 
 const Card = ({ title, category, img_link, link, className }) => {
   return (
@@ -50,12 +51,15 @@ const Card = ({ title, category, img_link, link, className }) => {
           </div>
 
           <div className={clsx("w-full h-full")} id="imgContainer">
-            <img
+            <Image
               className={clsx(
                 "scale-110 group-hover:scale-125 group-hover:rotate-2 transition-all duration-500"
               )}
               src={img_link}
               alt="Portfolio Images"
+              width={500}
+              height={500}
+              unoptimized={false}
             />
           </div>
         </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import clsx from "clsx";
 import { brandLogo } from "@/data/local-data";
+import Image from "next/image";
 
 export default function Brand() {
   return (
@@ -22,7 +23,14 @@ export default function Brand() {
           {brandLogo.map((item, index) => {
             return (
               <div key={index} className="w-full h-auto">
-                <img src={item.img} alt={item.alt} className="w-auto h-auto" />
+                <Image
+                  src={item.img}
+                  alt={item.alt}
+                  width={500}
+                  height={500}
+                  unoptimized
+                  className="w-auto h-auto"
+                />
               </div>
             );
           })}
