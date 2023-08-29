@@ -57,7 +57,7 @@ const Card = ({ title, category, img_link, link, className }) => {
               )}
               src={img_link}
               alt="Portfolio Images"
-              width={500}
+              width={600}
               height={500}
               unoptimized={false}
             />

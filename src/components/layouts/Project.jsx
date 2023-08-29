@@ -8,6 +8,10 @@ import Button from "@/components/Button";
 import { projectItems } from "@/data/local-data";
 
 export default function Project() {
+  // dynamic routing
+  const formatterSlug = (title) => {
+    return title ? title?.toLowerCase().replace(/\s/g, "-") : "";
+  };
   // display six latest projects
   const latestProjects = projectItems.slice(0, 6);
   // display six projects after the latest projects
@@ -58,7 +62,7 @@ export default function Project() {
               title={item.title}
               category={item.category}
               img_link={item.cardImg}
-              link={item.route}
+              link={`/portfolio/${formatterSlug(item.title)}`}
             />
           ))}
         </div>
