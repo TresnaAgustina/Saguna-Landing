@@ -88,7 +88,7 @@ export default function Service() {
                   key={index}
                   id="singleItem2"
                 >
-                  <Link href="" className="link">
+                  <Link href="/portfolio" className="link">
                     <div
                       className={clsx(
                         "text-xl md:text-3xl text-secondary mb-2"

@@ -204,8 +204,7 @@ export default function Navbar() {
             {/* background */}
             <div id="bg" className={clsx("absolute top-0 overflow-auto")}>
               <svg
-                width="1691"
-                height="705"
+                className="w-auto h-screen top-0"
                 viewBox="0 0 1691 705"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"

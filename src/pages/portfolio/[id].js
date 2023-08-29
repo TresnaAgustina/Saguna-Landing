@@ -93,7 +93,7 @@ export default function PortfolioDetail() {
               layout="fill"
             />
           </div>
-          <p className="text-lg text-p font-regular mt-2">
+          <p className="text-lg text-p font-regular mt-2  px-4 sm:px-0">
             {selectedProject.desc}
           </p>
         </div>

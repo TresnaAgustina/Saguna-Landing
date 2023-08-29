@@ -16,23 +16,23 @@ const SocialIcons = ({ type, direct }) => {
   const icon = [
     {
       icon: faInstagram,
-      link: "https://www.instagram.com/akbar_ardiansyah_/",
+      link: "https://www.instagram.com/",
     },
     {
       icon: faLinkedin,
-      link: "https://www.linkedin.com/in/akbar-ardiansyah-/",
+      link: "https://www.linkedin.com/",
     },
     {
       icon: faWhatsapp,
-      link: "https://wa.me/62895354979179",
+      link: "https://api.whatsapp.com/send?phone=081907492346",
     },
     {
       icon: faEnvelope,
-      link: "mailto:tresnaa001@gmail.com",
+      link: "mailto:agus.ekadarma@gmail.com",
     },
     {
       icon: faPaperPlane,
-      link: "https://t.me/akbarardiansyah",
+      link: "https://t.me/",
     },
   ];
 
