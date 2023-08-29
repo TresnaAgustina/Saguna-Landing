@@ -15,7 +15,7 @@ export default function PortfolioDetail() {
   );
 
   if (!selectedProject) {
-    return <div>Project not found</div>;
+    return <div></div>;
   }
 
   // if project 1 is displayed, hide project 1 from other projects
