@@ -24,7 +24,7 @@ export default function ReasonItems() {
               )}
               id="icons"
             >
-              <i className={icon}></i>
+              {icon}
             </motion.div>
             <div id="texts">
               <motion.h3

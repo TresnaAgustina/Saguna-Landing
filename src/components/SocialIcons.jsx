@@ -1,16 +1,46 @@
+import React from "react";
 import { motion } from "framer-motion";
 import clsx from "clsx";
-import React from "react";
 
 // import social icons
 import { dataIcon } from "../data/local-data";
+import {
+  faInstagram,
+  faLinkedin,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope, faPaperPlane } from "@fortawesome/free-regular-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const SocialIcons = ({ type, direct }) => {
+  const icon = [
+    {
+      icon: faInstagram,
+      link: "https://www.instagram.com/akbar_ardiansyah_/",
+    },
+    {
+      icon: faLinkedin,
+      link: "https://www.linkedin.com/in/akbar-ardiansyah-/",
+    },
+    {
+      icon: faWhatsapp,
+      link: "https://wa.me/62895354979179",
+    },
+    {
+      icon: faEnvelope,
+      link: "mailto:tresnaa001@gmail.com",
+    },
+    {
+      icon: faPaperPlane,
+      link: "https://t.me/akbarardiansyah",
+    },
+  ];
+
   const isSecond = type == "secondary";
   const isVer = direct == "vertical";
   return (
     <div className={clsx("flex gap-5", isVer ? "flex-col gap-5" : "flex")}>
-      {dataIcon.map(({ icon, color, border, link }, index) => (
+      {icon.map(({ prefix, icon, link }, index) => (
         <a key={index} href={link}>
           <motion.div
             initial={{ scale: 0 }}
@@ -22,7 +52,8 @@ const SocialIcons = ({ type, direct }) => {
                 : "text-text hover:cursor-pointer duration-200 hover:bg-primary hover:text-secondary hover:border-primary"
             )}
           >
-            <i className={icon}></i>
+            <FontAwesomeIcon icon={icon} />
+            {/* <i className={icon}></i> */}
           </motion.div>
         </a>
       ))}

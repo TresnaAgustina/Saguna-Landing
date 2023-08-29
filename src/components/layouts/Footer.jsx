@@ -27,7 +27,7 @@ export default function Footer() {
             className={clsx("text-secondary text-2xl font-semibold")}
             id="companyName"
           >
-            <h1>Saguna Sigma Teknologi</h1>
+            Saguna Sigma Teknologi
           </h1>
           <div className={clsx("")}>
             <SocialIcons type="secondary" direct="horizontal" />

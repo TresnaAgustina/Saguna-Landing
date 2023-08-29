@@ -62,7 +62,7 @@ export default function Project() {
         </div>
 
         <div
-          class={clsx("w-full h-auto flex justify-center")}
+          className={clsx("w-full h-auto flex justify-center")}
           id="btnContainer"
         >
           <Button link="/portfolio" type="secondary" text="Lihat Semua" />

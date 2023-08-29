@@ -4,35 +4,45 @@ import { nanoid } from "nanoid";
 export const dataIcon = [
   {
     id: nanoid(),
-    icon: "fa-brands fa-instagram",
+    prefix: "fab",
+    iconName: "instagram",
+    icon: ["fab", "instagram"],
     color: "hover:bg-[#FF317B]",
     border: "hover:border-[#FF317B]",
     link: "https://www.instagram.com/",
   },
   {
     id: nanoid(),
-    icon: "fa-brands fa-linkedin-in",
+    prefix: "fab",
+    iconName: "linkedin-in",
+    icon: ["fab", "linkedin-in"],
     color: "hover:bg-[#0066C8]",
     border: "hover:border-[#0066C8]",
     link: "https://www.linkedin.com/",
   },
   {
     id: nanoid(),
-    icon: "fa-brands fa-whatsapp",
+    prefix: "fab",
+    iconName: "whatsapp",
+    icon: ["fab", "whatsapp"],
     color: "hover:bg-[#00C307]",
     border: "hover:border-[#00C307]",
     link: "https://api.whatsapp.com/send?phone=082144785332",
   },
   {
     id: nanoid(),
-    icon: "fa-regular fa-paper-plane",
+    prefix: "far",
+    iconName: "paper-plane",
+    icon: ["far", "paper-plane"],
     color: "hover:bg-[#16A0E8]",
     border: "hover:border-[#16A0E8]",
     link: "https://www.instagram.com/username/",
   },
   {
     id: nanoid(),
-    icon: "fa-regular fa-envelope",
+    prefix: "far",
+    iconName: "envelope",
+    icon: ["far", "envelope"],
     color: "hover:bg-[#DD5046]",
     border: "hover:border-[#DD5046]",
     link: "mailto:tresnaa001@gmail.com",
@@ -268,21 +278,27 @@ export const brandLogo = [
 ];
 
 // ==========*========== [ Reason ] ==========*========== //]
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCircleCheck,
+  faUserGroup,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
 export const ReasonItem = [
   {
     title: "Proses Kerja Prioritas",
     desc: "Proses Kerja Prioritas kami: efisien, berkualitas, dan menghasilkan hasil terbaik bagi Anda.",
-    icon: "fa-solid fa-circle-check",
+    icon: <FontAwesomeIcon icon={faCircleCheck} />,
   },
   {
     title: "Team Berdedikasi",
     desc: "Tim kami penuh dedikasi, berkomitmen memberikan yang terbaik untuk kesuksesan proyek Anda.",
-    icon: "fa-solid fa-user-group",
+    icon: <FontAwesomeIcon icon={faUserGroup} />,
   },
   {
     title: "Dukungan 24/7 Jam",
     desc: "Kami siap memberikan dukungan penuh 24/7 untuk menjaga keberlanjutan dan kepercayaan Anda.",
-    icon: "fa-solid fa-phone",
+    icon: <FontAwesomeIcon icon={faPhone} />,
   },
 ];
 
