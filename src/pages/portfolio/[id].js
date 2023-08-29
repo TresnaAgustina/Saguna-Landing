@@ -101,9 +101,10 @@ export default function PortfolioDetail() {
         <div class="flex flex-col w-full m-auto">
           <h2 class="text-text text-2xl font-semibold mt-14">Projek Lain</h2>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 mb-28">
-            {otherProjects.map((item) => {
+            {otherProjects.map((item, index) => {
               return (
                 <Card
+                  key={index}
                   title={item.title}
                   category={item.category}
                   img_link={item.cardImg}
