@@ -5,7 +5,7 @@ import Navbar from "@/components/layouts/Navbar";
 import clsx from "clsx";
 import Image from "next/image";
 
-export default function gallery() {
+export default function Gallery() {
   const [currentImage, setCurrentImage] = useState(0);
   const [isViewerOpen, setIsViewerOpen] = useState(false);
   const images = [
