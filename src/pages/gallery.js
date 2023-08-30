@@ -5,6 +5,7 @@ import Navbar from "@/components/layouts/Navbar";
 import clsx from "clsx";
 import Image from "next/image";
 import BgImage from "@/svg/BgImage";
+import Footer from "@/components/layouts/Footer";
 
 export default function Gallery() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -35,15 +36,12 @@ export default function Gallery() {
     <>
       {/* when isView open, hide navbar */}
       {isViewerOpen ? null : <Navbar />}
-      <div className="w-full h-full">
+      <div className="container mx-auto mt-32 relative z-40 mb-32">
         <BgImage />
-      </div>
-      <div className="container mx-auto mt-32 relative z-40">
-        <h1 className="text-5xl font-bold text-start text-primary mt-10 mb-2">
-          <span className="text-3xl text-p font-semibold -mb-2">Foto</span>{" "}
-          <br /> Galeri
+        <h1 className="text-5xl font-bold text-center text-primary mt-10 mb-2">
+          Galeri
         </h1>
-        <p className="text-xl text-p font-light">
+        <p className="text-xl text-p font-light text-center">
           Berikut dokumentasi dari beberapa project dan kegiatan yang kami ikuti
         </p>
         <div className="mt-12">
@@ -80,6 +78,7 @@ export default function Gallery() {
           )}
         </div>
       </div>
+      <Footer />
     </>
   );
 }

@@ -4,6 +4,7 @@ import { projectItems } from "@/data/local-data";
 import Card from "@/components/Card";
 import BgImage from "@/svg/BgImage";
 import Navbar from "@/components/layouts/Navbar";
+import Footer from "@/components/layouts/Footer";
 
 export default function Portfolio() {
   // project Filter
@@ -36,11 +37,9 @@ export default function Portfolio() {
   return (
     <>
       <Navbar />
-      <div className="relative w-full h-screen bg-secondary overflow-auto pt-32">
+      <div className="container mx-auto my-32">
         {/* bg img */}
-        <div className="w-full h-screen absolute z-0 top-0 left-0">
-          <BgImage />
-        </div>
+        <BgImage />
         {/* header */}
         <div className="relative w-full h-auto flex flex-col items-center z-20">
           <div className="text-center flex flex-col gap-2">
@@ -90,6 +89,7 @@ export default function Portfolio() {
           })}
         </div>
       </div>
+      <Footer />
     </>
   );
 }

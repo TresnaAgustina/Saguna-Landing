@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Brand() {
   return (
     <section
-      className="shadow-navbar w-full h-auto border relative z-20 bg-secondary backdrop-blur-md"
+      className="shadow-navbar w-full h-auto relative z-40 backdrop-blur-md"
       id="content"
     >
       <div

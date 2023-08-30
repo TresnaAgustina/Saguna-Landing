@@ -8,6 +8,7 @@ import Image from "next/image";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import Footer from "@/components/layouts/Footer";
 
 export default function PortfolioDetail() {
   const router = useRouter();
@@ -38,8 +39,8 @@ export default function PortfolioDetail() {
   return (
     <>
       <Navbar />
-      <div className="container mx-auto">
-        <div className="section mt-32 md:mt-46 w-[90%] m-auto">
+      <div className="container mx-auto mt-32 mb-24">
+        <div className="section  md:mt-46 w-full m-auto px-4 sm:px-0">
           <div className="">
             <h1 className="text-2xl md:text-4xl text-primary font-bold bg-none md:w-4/6 capitalize">
               {selectedProject.title}
@@ -108,7 +109,7 @@ export default function PortfolioDetail() {
 
         <div class="flex flex-col w-full m-auto">
           <h2 class="text-text text-2xl font-semibold mt-14">Projek Lain</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 mb-28">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
             {otherProjects.map((item, index) => {
               return (
                 <Card
@@ -123,6 +124,7 @@ export default function PortfolioDetail() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

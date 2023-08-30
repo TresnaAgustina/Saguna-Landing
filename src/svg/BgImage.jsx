@@ -4,7 +4,7 @@ export default function BgImage() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="w-full h-full absolute top-0 left-0 z-0"
+      className="w-auto h-full md:w-full md:h-auto absolute top-0 left-0 z-0"
       viewBox="0 0 2106 1821"
     >
       <g filter="url(#filter0_f_758_162)">

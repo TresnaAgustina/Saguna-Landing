@@ -15,7 +15,7 @@ export default function ReasonHeader() {
           }}
           viewport={{ once: true }}
           className={clsx(
-            "absolute right-0 z-0 w-4/5 xl:full h-44 bg-slate-100"
+            "block xl:hidden absolute right-0 z-0 w-4/5 xl:full h-44 bg-slate-100"
           )}
           id="bg"
         ></motion.div>
