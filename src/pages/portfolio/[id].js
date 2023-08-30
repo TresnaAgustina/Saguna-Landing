@@ -6,6 +6,9 @@ import Navbar from "@/components/layouts/Navbar";
 import Link from "next/link";
 import Image from "next/image";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+
 export default function PortfolioDetail() {
   const router = useRouter();
   const { id } = router.query;
@@ -67,9 +70,14 @@ export default function PortfolioDetail() {
               </div>
 
               <div className="text-text text-md font-medium hover:underline hover:underline-offset-3 hover:text-primary mt-6 lg:mt-0">
-                <Link href={selectedProject.projectUrl} target="blank">
+                {/* if project url null, disable link */}
+
+                <Link href={selectedProject.projectUrl} target="_blank">
                   Lihat Projek
-                  <i className="fa-solid fa-up-right-from-square ml-2 text-primary"></i>
+                  <FontAwesomeIcon
+                    className="ml-2"
+                    icon={faUpRightFromSquare}
+                  />
                 </Link>
               </div>
             </div>

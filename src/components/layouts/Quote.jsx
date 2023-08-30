@@ -2,6 +2,9 @@ import React from "react";
 import clsx from "clsx";
 import { motion } from "framer-motion";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownLong } from "@fortawesome/free-solid-svg-icons";
+
 export default function Quote() {
   return (
     <section className="w-full xl:w-[70%] h-auto py-24 m-auto">
@@ -55,7 +58,7 @@ export default function Quote() {
             )}
             id="button"
           >
-            <i className="fa-solid fa-down-long"></i>
+            <FontAwesomeIcon icon={faDownLong} />
           </div>
         </motion.a>
       </div>
