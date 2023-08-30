@@ -173,7 +173,11 @@ export default function Navbar() {
           {/* button cotact */}
           <div className={clsx("")}>
             <div className={clsx("btn", "hidden md:block")}>
-              <Button link="/contact" type="primary" text="Hubungi Kami" />
+              <Button
+                link="https://api.whatsapp.com/send?phone=081907492346"
+                type="primary"
+                text="Hubungi Kami"
+              />
             </div>
             <div
               className={clsx(
