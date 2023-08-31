@@ -15,8 +15,8 @@ const Hero = () => {
       className={clsx("w-full h-screen flex justify-center overflow-hidden")}
       id="hero"
     >
-      <div className="w-full h-full absolute z-0 top-0 left-0 overflow-auto">
-        <BgImage width={"w-full"} height={"h-full"} />
+      <div className="w-full h-full absolute z-0 top-44 md:top-0 left-0 overflow-hidden">
+        <BgImage w={"w-auto"} h={"md:h-full"} />
       </div>
       <div
         className={clsx(
