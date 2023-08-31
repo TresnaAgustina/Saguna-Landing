@@ -1,10 +1,11 @@
 import React from "react";
+import clsx from "clsx";
 
-export default function BgImage() {
+export default function BgImage({ width, height }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="w-auto h-full md:w-full md:h-auto absolute top-0 left-0 z-0"
+      className={clsx("absolute top-0 left-0 z-0", `${width} ${height}}`)}
       viewBox="0 0 2106 1821"
     >
       <g filter="url(#filter0_f_758_162)">

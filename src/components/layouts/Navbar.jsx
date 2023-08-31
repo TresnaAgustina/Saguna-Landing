@@ -198,15 +198,20 @@ export default function Navbar() {
           {/* Masukin menu yang mau dimunculin ketika isNavOpen bernilai true */}
           <div
             className={clsx(
-              "top-0 right-0",
-              "bg-secondary absolute w-full h-screen z-50",
+              "md:hidden top-0 right-0",
+              "bg-secondary fixed w-full h-screen z-50",
               "flex justify-center items-center",
               "transition-all duration-300 ease-in-out"
             )}
             id="navItems"
           >
             {/* background */}
-            <div id="bg" className={clsx("absolute top-0 overflow-auto")}>
+            <div
+              id="bg"
+              className={clsx(
+                "absolute w-full h-screen top-0 right-0 overflow-hidden"
+              )}
+            >
               <svg
                 className="w-auto h-screen top-0"
                 viewBox="0 0 1691 705"

@@ -45,7 +45,7 @@ export default function about() {
       <Navbar />
       <section className="container mx-auto py-32 px-4 sm:px-0 relative ">
         <div className="w-full h-full absolute z-0 top-0 left-0 overflow-auto">
-          <BgImage />
+          <BgImage width={"w-auto md:w-full"} height={"h-screen md:h-auto"} />
         </div>
         {/* Header */}
         <div className="w-full h-auto relative z-40">

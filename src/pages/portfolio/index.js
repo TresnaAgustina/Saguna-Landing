@@ -39,7 +39,9 @@ export default function Portfolio() {
       <Navbar />
       <div className="container mx-auto my-32">
         {/* bg img */}
-        <BgImage />
+        <div className="w-full h-full absolute z-0 top-0 left-0 overflow-auto">
+          <BgImage width={"w-auto md:w-full"} height={"h-screen md:h-auto"} />
+        </div>
         {/* header */}
         <div className="relative w-full h-auto flex flex-col items-center z-20">
           <div className="text-center flex flex-col gap-2">

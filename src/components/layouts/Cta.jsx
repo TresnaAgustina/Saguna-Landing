@@ -6,7 +6,10 @@ import Button from "@/components/Button";
 export default function Cta() {
   return (
     <div id="container">
-      <div class={clsx("w-full xl:w-[70%] m-auto h-auto mb-24")} id="content">
+      <div
+        className={clsx("w-full xl:w-[70%] m-auto h-auto mb-24")}
+        id="content"
+      >
         <div
           className={clsx("flex flex-col justify-center items-center")}
           id="text"
@@ -31,7 +34,11 @@ export default function Cta() {
           </p>
 
           <div className={clsx("mt-14")} id="btn">
-            <Button type="primary" text="Hubungi Kami" />
+            <Button
+              link="https://api.whatsapp.com/send?phone=081907492346"
+              type="primary"
+              text="Hubungi Kami"
+            />
           </div>
         </div>
       </div>

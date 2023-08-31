@@ -36,15 +36,15 @@ export default function Gallery() {
     <>
       {/* when isView open, hide navbar */}
       {isViewerOpen ? null : <Navbar />}
-      <div className="container mx-auto mt-32 relative z-40 mb-32">
-        <BgImage />
-        <h1 className="text-5xl font-bold text-center text-primary mt-10 mb-2">
+      <div className="container mx-auto mt-32 relative mb-32">
+        <BgImage width={"w-auto md:w-full"} height={"h-screen md:h-auto"} />
+        <h1 className="text-5xl font-bold text-center text-primary mt-10 mb-2 relative z-40">
           Galeri
         </h1>
-        <p className="text-xl text-p font-light text-center">
+        <p className="text-xl text-p font-light text-center relative z-40">
           Berikut dokumentasi dari beberapa project dan kegiatan yang kami ikuti
         </p>
-        <div className="mt-12">
+        <div className="mt-12 relative z-40">
           <ResponsiveMasonry
             columnsCountBreakPoints={{ 350: 2, 750: 2, 900: 4 }}
           >
